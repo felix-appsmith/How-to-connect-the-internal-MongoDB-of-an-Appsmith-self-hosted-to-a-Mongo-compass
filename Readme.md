@@ -32,6 +32,8 @@ root@c2d969adde7a:/#
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | tee /etc/apt/sources.list.d/ngrok.list && apt update && apt install ngrok
 ```
 4. Get your Ngrok token for this create an account in this [link](https://dashboard.ngrok.com/signup) and the web will give you the token
+![2022-11-18_10-18](https://user-images.githubusercontent.com/114161539/202760076-035c672a-369e-4991-9c31-e78635e25bd8.png)
+
 5.  Bind Ngrok to your account with the following command
 ```bash
 ngrok config add-authtoken <token>
@@ -72,6 +74,8 @@ Next we will show how to obtain the connection credentials
 5. In this file look for `APPSMITH_MONGODB_USER`
 `Note: performing this search is easier from VS code`
 6. Once this file is found, you will see all the information necessary to connect to this Mongo database.
+![image (4)](https://user-images.githubusercontent.com/114161539/202760125-aba84a65-5a1c-4b79-a171-f3502054814f.png)
+
 
 ### How to connect Mongo compass
 
